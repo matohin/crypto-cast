@@ -16,11 +16,3 @@ train_data = data_prep.train_data
 test_data = data_prep.test_data
 
 #%%
-data = test_data
-#%%
-data["High"] -= data["Open"]
-data["Low"] -= data["Open"]
-data["Close"] -= data["Open"]
-data["VWAP"] -= data["Open"]
-#%%
-data.sample(30)
